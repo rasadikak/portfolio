@@ -1,7 +1,9 @@
 // A placeholder component — just so the file exists
-function projects() {
+function Projects() {
   return (
-    <div>Navbar goes here</div>
+    <>
+    </>
+    
   )
 }
 

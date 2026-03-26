@@ -1,8 +1,12 @@
-// A placeholder component — just so the file exists
+import {styles} from './Hero.module.css'
 function Hero() {
   return (
-    <div>Navbar goes here</div>
-  )
+    <>
+      <div>
+      
+    </div>
+    </>
+  );
 }
 
 export default Hero

@@ -1,7 +1,7 @@
 
 function Articles() {
   return (
-    <div>Navbar goes here</div>
+    <div></div>
   )
 }
 

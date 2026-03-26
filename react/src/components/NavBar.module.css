@@ -1,0 +1,46 @@
+.navBar {
+  padding: 16px 40px;       /* more horizontal breathing room */
+  border-bottom: 1px solid #1e293b;   /* subtle separator line */
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: #1e293b;
+  display: flex;
+  justify-content: space-between;
+  align-items:center;
+}
+
+.navLinks {
+  display:flex ;
+  gap: 30px;
+  
+
+}
+
+.navLinks a {
+  color: #f5f6f9;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 8px 12px;
+  border-radius: 6px;
+}
+
+
+
+.navLinks a:hover {
+  color: #a78bfa;
+  background: rgba(167, 139, 250, 0.1);   /* very subtle purple bg */
+  transition: all 0.3s;
+}
+
+
+
+
+
+
+.logo {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
