@@ -1,0 +1,51 @@
+.main {
+  background-color: #080d14;
+  padding: 40px 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  border-top: 1px solid #1e293b;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.h3 {
+  color: #94a3b8;
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+  
+  font-family: sans-serif;
+}
+
+.links {
+  display: flex;
+  gap: 20px;
+}
+
+.link {
+  color: #94a3b8;
+  font-size: 1.5rem;
+  text-decoration: none;
+  transition: color 0.3s, transform 0.3s;
+  display: flex;
+  align-items: center;
+}
+
+.link:hover {
+  color: #a78bfa;
+  transform: translateY(-3px);
+}
+
+.p {
+  color: #475569;
+  font-size: 0.85rem;
+  letter-spacing: 1px;
+  font-family: sans-serif;
+}
