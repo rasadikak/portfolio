@@ -1,4 +1,4 @@
-// A placeholder component — just so the file exists
+import styles from './Projects.module.css'
 function Projects() {
   return (
     <>
