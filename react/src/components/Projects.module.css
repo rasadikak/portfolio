@@ -1,0 +1,131 @@
+.main{
+  background-color: #1e293b;
+  padding: 80px;
+  min-height: 100vh;
+  
+}
+
+.h2{
+    color:#a78bfa;
+    font-weight: 600;
+    font-family:sans-serif ;
+    align-items: center;
+    text-align: center;
+    
+    margin-bottom: 16px;
+    letter-spacing: 2px;
+    
+    font-size: 2rem;
+}
+
+.mainContainer {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;  /* wraps to next line on small screens */
+  align-items: center;
+  justify-content: center;  /* centers the cards horizontally */
+  align-items: stretch;
+  
+}
+
+.card {
+  background-color: #0f172a;
+  border-radius: 12px;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  border: 1px solid #2d3748;
+  min-width: 400px;
+  /*flex-direction: column;*/
+  gap:10px;
+                
+  min-width: unset;
+  max-width: unset;
+  transition: transform 0.3s;
+  width: 300px;
+  
+}
+
+.card:hover {
+  transform: translateY(-5px);  /* subtle lift on hover */
+  border-color: #a78bfa;
+}
+
+.title{
+  color: white;
+  font-family:sans-serif ;
+  font-size: 1.2rem;
+  font-weight: 600;
+  width: 100%;        /* pushes skills to next line */
+  margin-bottom: 8px;
+  letter-spacing: 1px;
+  
+
+}
+
+.description{
+  color: #94a3b8;
+  font-family:sans-serif ;
+  font-size: 1rem;
+  font-weight: 400;
+  text-align: center;
+  justify-content: center;
+  line-height: 1.7;
+  word-spacing: 2px;
+  letter-spacing: 1px; 
+}
+
+.buttons{
+    display: flex;
+    gap:10px;
+}
+
+.github_btn{
+     background-color: #a78bfa;
+    color : white;
+    /*padding : 12px 28px;*/
+    border-radius : 8px;
+    border :none;
+    cursor :pointer;
+    font-weight : 600;
+    font-family:sans-serif ;
+     padding: 8px 16px;
+  font-size: 0.9rem;
+}
+
+.github_btn:hover {
+  background-color: #7c3aed;  /* darker purple */
+  transition: all 0.3s;
+}
+
+.demo_btn{
+     background-color: transparent;
+    border: 2px solid #a78bfa;
+    color: #a78bfa;
+
+    /*padding : 12px 28px;*/
+    border-radius : 8px;
+    
+    cursor :pointer;
+    font-weight : 600;
+    font-family:sans-serif ;
+     padding: 8px 16px;
+  font-size: 0.9rem;
+}
+
+.demo_btn:hover {
+  background-color: #7c3aed;  /* darker purple */
+  transition: all 0.3s;
+}
+
+.technology {
+  color: #a78bfa;
+  font-size: 1rem;
+  font-weight: 600;
+  background: rgba(167, 139, 250, 0.1);
+  padding: 4px 10px;
+  border-radius: 20px;
+  display: inline-block;
+  font-family: sans-serif;
+}

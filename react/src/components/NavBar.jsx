@@ -4,7 +4,7 @@ function Navbar() {
     <>
     <nav className={styles.navBar}>
     <div className={styles.logo}>
-      Kaushani
+      KaushaniR
     </div>
 
     <div className={styles.navLinks}>

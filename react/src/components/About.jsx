@@ -30,7 +30,7 @@ const tools = [
   
   return (
     <>
-    <div className={styles.main}>
+    <div id='about' className={styles.main}>
     <h2 className={styles.about}>About me</h2>
 
     <p className={styles.description}>
