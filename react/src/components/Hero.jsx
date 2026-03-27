@@ -7,7 +7,7 @@ function Hero() {
 
          <div className={styles.heroLeft}>
           
-        <img src='/your-photo.jpg' alt='Kaushani' className={styles.photo} />
+        <img src='/my_photo.jpeg' alt='Kaushani' className={styles.photo} />
         
         </div>
 

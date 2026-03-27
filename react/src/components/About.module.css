@@ -1,0 +1,98 @@
+.main{
+  background-color: #1e293b;
+  padding: 80px;
+  min-height: 100vh;
+  
+}
+
+
+.about{
+    color:#a78bfa;
+    font-weight: 600;
+    font-family:sans-serif ;
+    align-items: center;
+    text-align: center;
+    
+    margin-bottom: 16px;
+    letter-spacing: 2px;
+    
+    font-size: 2rem;
+}
+
+.description{
+    color:white;
+    font-weight: 300;
+    font-family:sans-serif ;
+    align-items: center;
+    padding:30px;
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 60px auto;  /* centers it and adds space below */
+    word-spacing: 2px;
+line-height: 1.7;
+}
+
+
+.mainContainer {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;  /* wraps to next line on small screens */
+  align-items: center;
+  justify-content: center;  /* centers the cards horizontally */
+  align-items: stretch;
+  
+}
+
+.card {
+  background-color: #0f172a;
+  border-radius: 12px;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  border: 1px solid #2d3748;
+  min-width: 200px;
+  flex-direction: column;
+  gap:10px;
+                
+  min-width: unset;
+  max-width: unset;
+  transition: transform 0.3s;
+  width: 300px;
+  
+}
+
+.card:hover {
+  transform: translateY(-5px);  /* subtle lift on hover */
+  border-color: #a78bfa;
+}
+
+.skill {
+  background-color: #1e293b;
+  color: #a78bfa;
+  font-family:sans-serif ;
+  padding: 6px 14px;
+  border-radius: 20px;  /* pill shape */
+  font-size: 1rem;
+border: 1px solid #a78bfa;
+}
+
+.skill:hover {
+  background-color: #a78bfa;
+  color: white;
+  cursor: default;
+  transition: all 0.3s;
+}
+
+.title {
+  color: white;
+  font-family:sans-serif ;
+  font-size: 1.5rem;
+  font-weight: 600;
+  width: 100%;        /* pushes skills to next line */
+  margin-bottom: 8px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+

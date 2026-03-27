@@ -1,6 +1,6 @@
 .navBar {
   padding: 16px 40px;       /* more horizontal breathing room */
-  border-bottom: 1px solid #1e293b;   /* subtle separator line */
+  border-bottom: 1px solid #66696e;    /* subtle separator line */
   position: sticky;
   top: 0;
   z-index: 100;
@@ -20,9 +20,10 @@
 .navLinks a {
   color: #f5f6f9;
   text-decoration: none;
-  font-size: 16px;
+  font-size: 18px;
   padding: 8px 12px;
   border-radius: 6px;
+  font-family:sans-serif ;
 }
 
 
@@ -43,4 +44,5 @@
   font-size: 20px;
   font-weight: bold;
   letter-spacing: 1px;
+  font-family:sans-serif ;
 }
