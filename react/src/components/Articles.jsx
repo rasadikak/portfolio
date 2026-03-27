@@ -1,7 +1,9 @@
+import styles from './Articles.module.css'
 
 function Articles() {
   return (
-    <div></div>
+    <>
+    </>
   )
 }
 
