@@ -4,7 +4,7 @@ function Navbar({toggleTheme, isDark}) {
     <>
     <nav className={styles.navBar}>
     <div className={styles.logo}>
-      KaushaniR
+      Kaushani
     </div>
 
     <div className={styles.navLinks}>
