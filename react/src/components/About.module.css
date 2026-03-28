@@ -81,3 +81,9 @@
   letter-spacing: 1px;
   text-transform: uppercase;
 }
+
+
+@media (max-width: 768px) {
+  .main { padding: 40px 20px; }
+  .card { width: 100%; }
+}

@@ -48,3 +48,8 @@
   letter-spacing: 1px;
   font-family: sans-serif;
 }
+
+@media (max-width: 768px) {
+  .main { padding: 30px 20px; }
+  .links { gap: 12px; }
+}

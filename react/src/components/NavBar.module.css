@@ -59,3 +59,10 @@
   color: var(--accent);
   transform: rotate(20deg);
 }
+
+@media (max-width: 768px) {
+  .navBar { padding: 12px 16px; }
+  .navLinks { gap: 8px; }
+  .navLinks a { font-size: 13px; padding: 4px 6px; }
+  .logo { font-size: 16px; }
+}

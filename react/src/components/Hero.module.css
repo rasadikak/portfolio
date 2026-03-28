@@ -97,3 +97,13 @@
 .button2:hover {
   background-color: rgba(167, 139, 250, 0.1);
 }
+
+@media (max-width: 768px) {
+  .hero { flex-direction: column; padding: 40px 20px; text-align: center; gap: 30px; }
+  .heroRight { margin-left: 0; align-items: center; }
+  .photo { width: 200px; height: 200px; }
+  .myName { font-size: 2rem; }
+  .job { font-size: 1.2rem; }
+  .description { font-size: 1rem; }
+  .buttons { justify-content: center; }
+}

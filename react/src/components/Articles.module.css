@@ -101,3 +101,9 @@
 .div a:hover {
   color: var(--accent-hover);
 }
+
+
+@media (max-width: 768px) {
+  .main { padding: 40px 20px; }
+  .card { width: 100%; height: auto; }
+}
