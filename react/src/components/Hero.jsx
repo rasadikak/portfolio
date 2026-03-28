@@ -26,9 +26,8 @@ function Hero() {
         
 
         <div className={styles.description}>
-        <p>A passionate software engineer building modern web applications
-           with React, Angular, Java and Spring Boot. Explore my projects, 
-           articles, and professional journey.</p>
+        <p>A passionate software engineer, 
+          building smart solutions with code and creativity</p>
         </div>
 
         <div className={styles.buttons}>

@@ -10,12 +10,15 @@ function About() {
 ]
 
 const backendSkills = [
-  { name: 'Node.js', icon: 'devicon-nodejs-plain colored' },
   { name: 'Python', icon: 'devicon-python-plain colored' },
+  { name: 'Nest.js', icon: 'devicon-nestjs-plain colored' },
+  
   { name: 'Java', icon: 'devicon-java-plain colored' },
+  { name: 'C', icon: 'devicon-c-plain colored' }
 ]
 
 const databaseSkills = [
+  { name: 'Postgresql', icon: 'devicon-postgresql-plain colored' },
   { name: 'MySQL', icon: 'devicon-mysql-plain colored' },
   { name: 'MongoDB', icon: 'devicon-mongodb-plain colored' },
   { name: 'Firebase', icon: 'devicon-firebase-plain colored' },
@@ -25,7 +28,7 @@ const tools = [
   { name: 'Git', icon: 'devicon-git-plain colored' },
   { name: 'GitHub', icon: 'devicon-github-original colored' },
   { name: 'VS Code', icon: 'devicon-vscode-plain colored' },
-  { name: 'Figma', icon: 'devicon-figma-plain colored' },
+  { name: 'Postman', icon: 'devicon-postman-plain colored' },
 ]
   
   return (
@@ -34,16 +37,12 @@ const tools = [
     <h2 className={styles.about}>About me</h2>
 
     <p className={styles.description}>
-      I am a dedicated Software Engineer from Sri Lanka, currently pursuing 
-      a BSc (Hons) in IT at the University of Moratuwa.
-       Passionate about Artifial Intelligence and full-stack development 
-       , I specialize in designing and 
-       building scalable, efficient, and user-friendly applications. With a 
-       strong problem-solving mindset and keen attention to detail, I excel 
-       in stress management, allowing me to remain focused and productive in 
-       high-pressure environments. Committed to continuous learning and 
-       professional growth, I actively seek opportunities to improve
-      my skills and contribute to impactful projects. 
+      I am an enthusiastic IT undergraduate, currently pursuing a BSc (Hons) in IT degree at 
+      Univerisity of Moratuwa,Sri Lanka with a passion for Software Engineering, Artificial Intelligence,
+       and web development.I focus on building efficient and user-friendly solutions 
+       while continuously learning new technologies and improving my technical abilities. 
+       With strong problem-solving skills and a positive mindset, I am committed to growing as
+        a developer and contributing to innovative and impactful solutions.
     </p>
 
     <h2 className={styles.about}>Tech Stack</h2>
