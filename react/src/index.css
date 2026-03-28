@@ -3,3 +3,37 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Default is DARK mode */
+:root {
+  --bg-primary: #0f172a;
+  --bg-secondary: #1e293b;
+  --card-bg: #0f172a;
+  --text-primary: #e2e8f0;
+  --text-muted: #94a3b8;
+  --border: #2d3748;
+  --accent: #a78bfa;
+  --accent-hover: #7c3aed;
+  --navbar-bg: #0f172a;
+  --navbar-border: #3d4f6b;
+   --footer-bg: #020408; 
+}
+
+/* Light mode — applied when .light class is on <html> */
+:root.light {
+  --bg-primary: #ffffff;
+  --bg-secondary: #f1f5f9;
+  --card-bg: #ffffff;
+  --text-primary: #0f172a;
+  --text-muted: #64748b;
+  --border: #e2e8f0;
+  --accent: #7c3aed;
+  --accent-hover: #6d28d9;
+  --navbar-bg: #ffffff;
+  --navbar-border: #c7d0df;
+  --footer-bg: #cbd5e1; 
+}

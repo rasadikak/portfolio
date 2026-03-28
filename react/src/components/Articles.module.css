@@ -1,19 +1,17 @@
 .main {
-  background-color: #1e293b;
+  background-color: var(--bg-secondary);
   padding: 80px;
-  
   min-height: 50vh;
   font-family: sans-serif;
 }
 
 .h2 {
-  color: #a78bfa;
+  color: var(--accent);
   font-weight: 600;
   text-align: center;
   margin-bottom: 40px;
   letter-spacing: 2px;
   font-size: 2rem;
-  
   font-family: sans-serif;
 }
 
@@ -26,15 +24,14 @@
 }
 
 .card {
-  background-color: #0f172a;  /* darker than bg so card is visible */
-  border: 1px solid #2d3748;
+  background-color: var(--bg-primary);
+  border: 1px solid var(--border);
   border-radius: 12px;
   padding: 24px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   gap: 12px;
-  border: 1px solid #2d3748;
   width: 300px;
   height: 280px;
   transition: transform 0.3s, border-color 0.3s;
@@ -43,24 +40,24 @@
 
 .card:hover {
   transform: translateY(-5px);
-  border-color: #a78bfa;
+  border-color: var(--accent);
 }
 
 .date {
-  color: #64748b;
+  color: var(--text-muted);
   font-size: 0.85rem;
   font-weight: 400;
 }
 
 .title {
-  color: #e2e8f0;
+  color: var(--text-primary);
   font-size: 1.1rem;
   font-weight: 600;
   line-height: 1.4;
 }
 
 .description {
-  color: #94a3b8;
+  color: var(--text-muted);
   font-size: 0.9rem;
   line-height: 1.7;
   flex-grow: 1;
@@ -68,7 +65,7 @@
 }
 
 .btn {
-  background-color: #a78bfa;
+  background-color: var(--accent);
   color: white;
   padding: 8px 16px;
   border-radius: 8px;
@@ -83,30 +80,24 @@
 }
 
 .btn:hover {
-  background-color: #7c3aed;
+  background-color: var(--accent-hover);
 }
-
 
 .div {
   display: flex;
-  
   margin-top: 40px;
-    font-family: sans-serif;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-    color: #7c3aed;
-    font-weight: 300;
-    font-size: 0.85rem;
+  font-family: sans-serif;
+  align-items: center;
+  justify-content: center;
 }
 
 .div a {
-  color: #a78bfa;
+  color: var(--accent);
   text-decoration: none;
   font-size: 1rem;
   transition: color 0.3s;
 }
 
 .div a:hover {
-  color: #7c3aed;
+  color: var(--accent-hover);
 }

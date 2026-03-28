@@ -1,5 +1,5 @@
 .hero {
-  background-color:#0f172a; /*#1e293b;*/
+  background-color: var(--bg-primary);
   min-height: 100vh;
   display: flex;
   flex-direction: row;
@@ -7,96 +7,93 @@
   align-items: center;
   gap: 60px;
   padding: 40px 80px;
-  color: white;
-  font-family:sans-serif ;
+  color: var(--text-primary);
+  font-family: sans-serif;
 }
 
 .heroRight {
   display: flex;
   flex-direction: column;
-  align-items:flex-start;
+  align-items: flex-start;
   gap: 16px;
   margin-left: auto;
 }
 
-
 .myName {
   font-size: 3.2rem;
-  color: #e2e8f0;
+  color: var(--text-primary);
   font-weight: bold;
-  line-height: 1.2;          /* tightens multiline names */
+  line-height: 1.2;
   margin: 0;
-  font-family:sans-serif ;
+  font-family: sans-serif;
 }
 
 .job {
   font-size: 1.8rem;
-  color: #a78bfa;
+  color: var(--accent);
   font-weight: 400;
   margin: 0;
-  font-family:sans-serif ;
+  font-family: sans-serif;
 }
 
 .description {
-  color: #94a3b8;
-  font-size: 1.5rem;           /* smaller, supporting text */
-  font-weight: 400;          /* not bold, less heavy */
+  color: var(--text-muted);
+  font-size: 1.5rem;
+  font-weight: 400;
   max-width: 500px;
-  line-height: 1.7;          /* unitless, not 1.7rem */
+  line-height: 1.7;
   margin: 0;
-  font-family:sans-serif ;
+  font-family: sans-serif;
 }
 
-.heroLeft{
+.heroLeft {
   display: flex;
   flex-direction: column;
-  align-items:flex-start;
+  align-items: flex-start;
   gap: 16px;
 }
-
 
 .photo {
   width: 450px;
   height: 450px;
   border-radius: 50%;
   object-fit: cover;
-  border: 4px solid #a78bfa;
+  border: 4px solid var(--accent);
 }
 
-.buttons{
-  display:flex;
-  gap: 20px
+.buttons {
+  display: flex;
+  gap: 20px;
 }
 
-.button1{
-  background-color: #a78bfa;
-  color : white;
-  padding : 12px 28px;
-  border-radius : 8px;
-  border :none;
-  cursor :pointer;
-  font-weight : 600;
-  font-family:sans-serif ;
-
-}
-
-.button1:hover {
-  background-color: #7c3aed;  /* darker purple */
+.button1 {
+  background-color: var(--accent);
+  color: white;
+  padding: 12px 28px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  font-family: sans-serif;
   transition: all 0.3s;
 }
 
-.button2{
-    background-color :transparent;
-    color : #a78bfa;
-    padding :12px 28px;
-    border-radius : 8px;
-    border : 2px solid #a78bfa;
-    cursor : pointer;
-    font-weight : 600;
-    font-family:sans-serif ;
+.button1:hover {
+  background-color: var(--accent-hover);
+}
+
+.button2 {
+  background-color: transparent;
+  color: var(--accent);
+  padding: 12px 28px;
+  border-radius: 8px;
+  border: 2px solid var(--accent);
+  cursor: pointer;
+  font-weight: 600;
+  font-family: sans-serif;
+  transition: all 0.3s;
 }
 
 .button2:hover {
   background-color: rgba(167, 139, 250, 0.1);
-  transition: all 0.3s;
 }

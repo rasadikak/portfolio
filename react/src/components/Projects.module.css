@@ -1,17 +1,16 @@
 .main {
-  background-color: #1e293b;
+  background-color: var(--bg-secondary);
   padding: 80px;
   min-height: 100vh;
 }
 
 .h2 {
-  color: #a78bfa;
+  color: var(--accent);
   font-weight: 600;
   text-align: center;
   margin-bottom: 40px;
   letter-spacing: 2px;
   font-size: 2rem;
-  
   font-family: sans-serif;
 }
 
@@ -24,25 +23,25 @@
 }
 
 .card {
-  background-color: #0f172a;
+  background-color: var(--bg-primary);
   border-radius: 12px;
   padding: 24px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   gap: 12px;
-  border: 1px solid #2d3748;
+  border: 1px solid var(--border);
   width: 400px;
   transition: transform 0.3s, border-color 0.3s;
 }
 
 .card:hover {
   transform: translateY(-5px);
-  border-color: #a78bfa;
+  border-color: var(--accent);
 }
 
 .title {
-  color: #e2e8f0;
+  color: var(--text-primary);
   font-size: 1.1rem;
   font-weight: 600;
   text-align: center;
@@ -51,17 +50,17 @@
 }
 
 .description {
-  color: #94a3b8;
+  color: var(--text-muted);
   font-size: 0.9rem;
   font-weight: 400;
   text-align: center;
   line-height: 1.7;
-  flex-grow: 1;  /* pushes buttons to bottom */
+  flex-grow: 1;
   font-family: sans-serif;
 }
 
 .technology {
-  color: #a78bfa;
+  color: var(--accent);
   font-size: 1rem;
   font-weight: 500;
   background: rgba(167, 139, 250, 0.1);
@@ -81,7 +80,7 @@
 }
 
 .github_btn {
-  background-color: #a78bfa;
+  background-color: var(--accent);
   color: white;
   padding: 8px 16px;
   border-radius: 8px;
@@ -95,14 +94,14 @@
 }
 
 .github_btn:hover {
-  background-color: #7c3aed;
+  background-color: var(--accent-hover);
 }
 
 .demo_btn {
-   text-decoration: none;
+  text-decoration: none;
   background-color: transparent;
-  border: 2px solid #a78bfa;
-  color: #a78bfa;
+  border: 2px solid var(--accent);
+  color: var(--accent);
   padding: 8px 16px;
   border-radius: 8px;
   cursor: pointer;

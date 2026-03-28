@@ -1,5 +1,5 @@
 import styles from './NavBar.module.css'
-function Navbar() {
+function Navbar({toggleTheme, isDark}) {
   return (
     <>
     <nav className={styles.navBar}>
@@ -12,13 +12,17 @@ function Navbar() {
       <a href='#projects'>Projects</a>
       <a href='#articles'>Articles</a>
       <a href='#contact'>Contact</a>
+
+      <button className={styles.togglebtn} onClick={toggleTheme}>
+        {isDark ? <i className='fa-solid fa-sun'></i> : <i className='fa-solid fa-moon'></i>}
+      </button>
       
     </div>
 
-    {/*<div className='darkModeButton'>
-      <button onClick={}></button>
+    
       
-    </div>*/}
+      
+    
 
     </nav>
     </>

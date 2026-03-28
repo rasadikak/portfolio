@@ -1,3 +1,4 @@
+import {useState}  from 'react'
 import Contact from "./components/Contact"
 import Projects  from "./components/Projects"
 import Articles  from "./components/Articles"
@@ -10,10 +11,16 @@ import Footer from "./components/Footer"
 
 
 function App(){
+
+  const [isDark, setIsDark]= useState(true)
+  const toggleTheme= ()=>{
+    setIsDark(!isDark)
+    document.documentElement.classList.toggle('light')
+  }
   return(
     <>
     
-    <NavBar />
+    <NavBar  toggleTheme={toggleTheme} isDark={isDark}/>
      <Hero />
     <About />
     <Projects />
