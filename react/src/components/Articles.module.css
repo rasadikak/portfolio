@@ -1,0 +1,112 @@
+.main {
+  background-color: #1e293b;
+  padding: 80px;
+  
+  min-height: 50vh;
+  font-family: sans-serif;
+}
+
+.h2 {
+  color: #a78bfa;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 40px;
+  letter-spacing: 2px;
+  font-size: 2rem;
+  
+  font-family: sans-serif;
+}
+
+.mainContainer {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.card {
+  background-color: #0f172a;  /* darker than bg so card is visible */
+  border: 1px solid #2d3748;
+  border-radius: 12px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 12px;
+  border: 1px solid #2d3748;
+  width: 300px;
+  height: 280px;
+  transition: transform 0.3s, border-color 0.3s;
+  overflow: hidden;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  border-color: #a78bfa;
+}
+
+.date {
+  color: #64748b;
+  font-size: 0.85rem;
+  font-weight: 400;
+}
+
+.title {
+  color: #e2e8f0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.description {
+  color: #94a3b8;
+  font-size: 0.9rem;
+  line-height: 1.7;
+  flex-grow: 1;
+  overflow: hidden;
+}
+
+.btn {
+  background-color: #a78bfa;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.85rem;
+  transition: background 0.3s;
+  text-decoration: none;
+  text-align: center;
+  margin-top: 8px;
+}
+
+.btn:hover {
+  background-color: #7c3aed;
+}
+
+
+.div {
+  display: flex;
+  
+  margin-top: 40px;
+    font-family: sans-serif;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #7c3aed;
+    font-weight: 300;
+    font-size: 0.85rem;
+}
+
+.div a {
+  color: #a78bfa;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+.div a:hover {
+  color: #7c3aed;
+}
