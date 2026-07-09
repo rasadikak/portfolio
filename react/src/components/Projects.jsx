@@ -18,59 +18,50 @@ function Projects() {
               APIs to provide smart recommendations and real-time travel insights.
           </p>
           <div className={styles.technology}>
-            Technologies: python
+            Technologies: FastAPI, HTML, Tailwind CSS, PostgreSQL
           </div>
           <div className={styles.buttons}>
-            <button className={styles.github_btn} onClick={()=>window.location.href='#'}>View on Github</button>
-            <button className={styles.demo_btn} onClick={()=>window.location.href='#'}>Demo</button>
+            <a href='https://github.com/rasadikak/AI_trip_planning_webapp.git' target='_blank' className={styles.github_btn}>View on Github</a>
+            <a href='' target='_blank' className={styles.demo_btn}>Demo</a>
           </div>
         </div>
 
 
         <div className={styles.card}>
-          <h4 className={styles.title}>Laptop Price predictor</h4>
+          <h4 className={styles.title}>AI-Crop-Disease-Yield-Platform</h4>
           <p className={styles.description}>
-            My first project
+            AgriSense is an AI-powered agricultural platform that gives 
+            Sri Lankan farmers real-time crop yield predictions, plant disease
+             detection, and weather anomaly alerts. Built with React, Express.js,
+              and FastAPI, it combines machine learning models with an AI chatbot
+               to support smarter, data-driven farming decisions.
           </p>
           <div className={styles.technology}>
-            Technologies: python
+            Technologies: React, Tailwind CSS Express.js, FastAPI, PostgreSQL
           </div>
           <div className={styles.buttons}>
-            <button className={styles.github_btn} onClick={()=>window.location.href='#'}>View on Github</button>
-            <button className={styles.demo_btn} onClick={()=>window.location.href='#'}>Demo</button>
+          <a href='https://github.com/rasadikak/AI-Crop-Disease-Yield-Platform.git' target='_blank' className={styles.github_btn}>View on Github</a>
+          <a href='' target='_blank' className={styles.demo_btn}>Demo</a>
           </div>
         </div>
 
 
         <div className={styles.card}>
-          <h4 className={styles.title}>Laptop Price predictor</h4>
+          <h4 className={styles.title}>Smart Credit API</h4>
           <p className={styles.description}>
-            My first project
+            Second year software project
           </p>
           <div className={styles.technology}>
-            Technologies: python
+            Technologies: React, React native, nest.js
           </div>
           <div className={styles.buttons}>
-            <button className={styles.github_btn} onClick={()=>window.location.href='#'}>View on Github</button>
-            <button className={styles.demo_btn} onClick={()=>window.location.href='#'}>Demo</button>
+            <a href='https://github.com/NishenAMJ/Smart_Credit_API.git' target='_blank' className={styles.github_btn}>View on Github</a>
+            <a href='' target='_blank' className={styles.demo_btn}>Demo</a>
           </div>
         </div>
 
         
 
-        <div className={styles.card}>
-          <h4 className={styles.title}>Laptop Price predictor</h4>
-          <p className={styles.description}>
-            My first project
-          </p>
-          <div className={styles.technology}>
-            Technologies: python
-          </div>
-          <div className={styles.buttons}>
-            <button className={styles.github_btn} onClick={()=>window.location.href='#'}>View on Github</button>
-            <button className={styles.demo_btn} onClick={()=>window.location.href='#'}>Demo</button>
-          </div>
-        </div>
 
         <div className={styles.card}>
           <h4 className={styles.title}>Laptop Price predictor</h4>
@@ -84,7 +75,7 @@ function Projects() {
             Technologies:  Flask, Pandas, NumPy, Scikit-learn, Jupyter Notebook, HTML,CSS
           </div>
           <div className={styles.buttons}>
-            <a href='https://github.com/rasadikak/Laptop_Price_Predictor_new' target='_blank' className={styles.github_btn}>View on Github</a>
+            <a href='https://github.com/rasadikak/Laptop_Price_Predictor_new.git' target='_blank' className={styles.github_btn}>View on Github</a>
             <a href='https://rasadikak.pythonanywhere.com/' target='_blank' className={styles.demo_btn}>Demo</a>
             
           </div>
@@ -103,8 +94,8 @@ function Projects() {
             Technologies: Python, TensorFlow / Keras, OpenCV, HTML, CSS
           </div>
           <div className={styles.buttons}>
-            <button className={styles.github_btn} onClick={()=>window.location.href='#'}>View on Github</button>
-            <button className={styles.demo_btn} onClick={()=>window.location.href='#'}>Demo</button>
+            <a href='https://github.com/rasadikak/Face-Mask-Detection.git' target='_blank' className={styles.github_btn}>View on Github</a>
+            <a href='' target='_blank' className={styles.demo_btn}>Demo</a>
           </div>
         </div>
 
@@ -122,7 +113,7 @@ function Projects() {
             Technologies: Flask, Hugging Face Inference API, HTML,CSS
           </div>
           <div className={styles.buttons}>
-            <a href='https://github.com/rasadikak/Text_to_Image_generator_new' target='_blank' className={styles.github_btn}>View on Github</a>
+            <a href='https://github.com/rasadikak/Text_to_Image_generator_new.git' target='_blank' className={styles.github_btn}>View on Github</a>
             <a href='https://kaushani.pythonanywhere.com/' target='_blank' className={styles.demo_btn}>Demo</a>
           </div>
         </div>

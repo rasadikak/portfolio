@@ -4,11 +4,13 @@ function Articles() {
   const articles = [
     {
       id: 1,
-      title: 'Your Article Title',
-      description: 'Short description of your article...',
+      title: 'Stop Confusing Modules, Libraries, and Frameworks (Python Guide)',
+      description: 'This article explains difference among modules, libraries and frameworks.',
       date: 'March 2026',
-      link: 'https://medium.com/@yourusername/...'
+      link: 'https://medium.com/stop-confusing-modules-libraries-and-frameworks-python-guide-4757c1ea4444'
     }
+    
+
   ]
 
   return (
@@ -27,33 +29,15 @@ function Articles() {
         ))}
 
 
-        {articles.map((article) => (
-          <div key={article.id} className={styles.card}>
-            <p className={styles.date}>{article.date}</p>
-            <h3 className={styles.title}>{article.title}</h3>
-            <p className={styles.description}>{article.description}</p>
-            <a href={article.link} target='_blank' rel='noreferrer' className={styles.btn}>
-              Read on Medium
-            </a>
-          </div>
-        ))}
+        
 
 
-        {articles.map((article) => (
-          <div key={article.id} className={styles.card}>
-            <p className={styles.date}>{article.date}</p>
-            <h3 className={styles.title}>{article.title}</h3>
-            <p className={styles.description}>{article.description}</p>
-            <a href={article.link} target='_blank' rel='noreferrer' className={styles.btn}>
-              Read on Medium
-            </a>
-          </div>
-        ))}
+        
 
         
       </div>
       <div className={styles.div}>
-          <a href=''>
+          <a href='https://medium.com/@kaushanirasadika385'>
             Read more articles on Medium  <i className='fa-brands fa-medium'></i></a>
         </div>
     </div>

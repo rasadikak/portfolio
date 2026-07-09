@@ -12,7 +12,7 @@ function About() {
 const backendSkills = [
   { name: 'Python', icon: 'devicon-python-plain colored' },
   { name: 'Nest.js', icon: 'devicon-nestjs-plain colored' },
-  
+   { name: 'Express.js', icon: 'devicon-express-original colored' },
   { name: 'Java', icon: 'devicon-java-plain colored' },
   { name: 'C', icon: 'devicon-c-plain colored' }
 ]
