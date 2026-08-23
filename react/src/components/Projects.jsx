@@ -41,7 +41,7 @@ function Projects() {
           </div>
           <div className={styles.buttons}>
           <a href='https://github.com/rasadikak/AI-Crop-Disease-Yield-Platform.git' target='_blank' className={styles.github_btn}>View on Github</a>
-          <a href='' target='_blank' className={styles.demo_btn}>Demo</a>
+          <a href='ai-crop-disease-yield-platform.vercel.app' target='_blank' className={styles.demo_btn}>Frontend</a>
           </div>
         </div>
 
