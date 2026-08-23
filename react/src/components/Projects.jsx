@@ -22,7 +22,7 @@ function Projects() {
           </div>
           <div className={styles.buttons}>
             <a href='https://github.com/rasadikak/AI_trip_planning_webapp.git' target='_blank' className={styles.github_btn}>View on Github</a>
-            <a href='' target='_blank' className={styles.demo_btn}>Demo</a>
+            <a href='https://serendib-ai-902076322619.asia-south1.run.app/frontend/home/home.html' target='_blank' className={styles.demo_btn}>Demo</a>
           </div>
         </div>
 
