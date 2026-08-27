@@ -49,7 +49,15 @@ function Projects() {
         <div className={styles.card}>
           <h4 className={styles.title}>Smart Credit API</h4>
           <p className={styles.description}>
-            Second year software project
+            Smart Credit+ is a peer-to-peer digital lending platform that
+             connects borrowers, lenders, and administrators through a 
+             transparent and structured digital lending workflow. Built 
+             with React, Vite, NestJS, Firestore, and cloud-based services, it
+              supports borrower and lender mobile applications, KYC verification, 
+              loan advertisements, digital agreements, QR-based repayment recording,
+               chat communication, portfolio analytics, and administrative 
+               monitoring to make the lending process more secure, organized, 
+               and accessible.
           </p>
           <div className={styles.technology}>
             Technologies: React, React native, nest.js
