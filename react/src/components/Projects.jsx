@@ -68,6 +68,26 @@ function Projects() {
           </div>
         </div>
 
+
+              <div className={styles.card}>
+          <h4 className={styles.title}>Epilogue Quiz Game Web App | MoraSpirit</h4>
+          <p className={styles.description}>
+           Epilogue Quiz Game Web App is a full-stack, gamified quiz platform
+            designed for the MoraSpirit community, featuring sequential level-locking 
+            and real-time score tracking to power a live, puzzle-based competition. 
+            It has been used by around 300 real-time registered users, providing a secure
+             and interactive web experience built with Next.js, Prisma, and MySQL.
+          </p>
+          <div className={styles.technology}>
+            Technologies:  Next.js, Prisma, MySQL
+          </div>
+          <div className={styles.buttons}>
+            <a href='https://github.com/moraspirit/epilogue-quiz-game-web-app.git' target='_blank' className={styles.github_btn}>View on Github</a>
+            <a href='https://quiz.moraspirit.com/' target='_blank' className={styles.demo_btn}>Demo</a>
+            
+          </div>
+        </div>
+
         
 
 
