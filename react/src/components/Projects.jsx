@@ -47,7 +47,7 @@ function Projects() {
 
 
         <div className={styles.card}>
-          <h4 className={styles.title}>Smart Credit API</h4>
+          <h4 className={styles.title}>Smart Credit API- Second Year Software Project</h4>
           <p className={styles.description}>
             Smart Credit+ is a peer-to-peer digital lending platform that
              connects borrowers, lenders, and administrators through a 
