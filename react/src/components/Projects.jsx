@@ -89,6 +89,28 @@ function Projects() {
           </div>
         </div>
 
+
+
+
+            <div className={styles.card}>
+          <h4 className={styles.title}>Quiet Corners | Full-Stack Blog Platform</h4>
+          <p className={styles.description}>
+            Quiet Corners is a full-stack personal blog platform featuring JWT-based
+            authentication for secure content management, category filtering, keyword
+            search, and a public commenting system for readers. Built with an ASP.NET
+            Core Web API backend and a React frontend, with Entity Framework Core and
+            SQLite powering a relational schema for posts, categories, comments, and users.
+          </p>
+          <div className={styles.technology}>
+            Technologies:  ASP.NET Core, Entity Framework Core, SQLite, React
+          </div>
+          <div className={styles.buttons}>
+            <a href='https://github.com/rasadikak/blog_webapp' target='_blank' className={styles.github_btn}>View on Github</a>
+            
+            
+          </div>
+        </div>
+
         
 
 
