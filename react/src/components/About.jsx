@@ -20,7 +20,7 @@ const backendSkills = [
 const databaseSkills = [
   { name: 'Postgresql', icon: 'devicon-postgresql-plain colored' },
   { name: 'MySQL', icon: 'devicon-mysql-plain colored' },
-  { name: 'MongoDB', icon: 'devicon-mongodb-plain colored' },
+  
   { name: 'Firebase', icon: 'devicon-firebase-plain colored' },
 ]
 
