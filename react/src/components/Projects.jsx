@@ -92,6 +92,30 @@ function Projects() {
 
 
 
+         <div className={styles.card}>
+          <h4 className={styles.title}>Boarding House Management System</h4>
+          <p className={styles.description}>
+           A full-featured Spring Boot backend for managing a boarding house,
+            supporting Admin and Tenant roles with JWT authentication and Spring
+             Security method-level access control. Admins manage rooms, onboard
+              tenants, record rent payments, and resolve complaints, while tenants
+               view their profile, payments, and submit complaints — all enforced 
+               through per-endpoint role checks rather than duplicated admin/tenant
+                code. 
+          </p>
+          <div className={styles.technology}>
+            Technologies:  Spring Boot, Spring Security, Spring Data JPA, MySQL, JWT
+          </div>
+          <div className={styles.buttons}>
+            <a href='https://github.com/moraspirit/epilogue-quiz-game-web-app.git' target='_blank' className={styles.github_btn}>View on Github</a>
+            <a href='https://quiz.moraspirit.com/' target='_blank' className={styles.demo_btn}>Demo</a>
+            
+          </div>
+        </div>
+
+
+
+
             <div className={styles.card}>
           <h4 className={styles.title}>Quiet Corners | Full-Stack Blog Platform</h4>
           <p className={styles.description}>
@@ -171,22 +195,7 @@ function Projects() {
 
 
 
-        <div className={styles.card}>
-          <h4 className={styles.title}>Simple Calculator</h4>
-          <p className={styles.description}>
-           Simple Calculator is a web-based application developed to perform basic
-            arithmetic operations such as addition, subtraction, multiplication, 
-            and division. It features a clean interface designed for quick and 
-            efficient calculations.
-          </p>
-          <div className={styles.technology}>
-            Technologies: HTML, CSS, JavaScript
-          </div>
-          <div className={styles.buttons}>
-            <a href='https://github.com/rasadikak/simple-calculator' target='_blank' className={styles.github_btn}>View on Github</a>
-            <a href='https://simple-calculator-jl7k8k1dw-rasadikaks-projects.vercel.app' target='_blank' className={styles.demo_btn}>Demo</a>
-          </div>
-        </div>
+        
 
 
 

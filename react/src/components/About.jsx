@@ -14,19 +14,21 @@ const backendSkills = [
   { name: 'Nest.js', icon: 'devicon-nestjs-plain colored' },
    { name: 'Express.js', icon: 'devicon-express-original colored' },
   { name: 'Java', icon: 'devicon-java-plain colored' },
+  { name: '.ASP.NET', icon: 'devicon-dotnetcore-plain colored' },
   { name: 'C', icon: 'devicon-c-plain colored' }
 ]
 
 const databaseSkills = [
   { name: 'Postgresql', icon: 'devicon-postgresql-plain colored' },
   { name: 'MySQL', icon: 'devicon-mysql-plain colored' },
-  
   { name: 'Firebase', icon: 'devicon-firebase-plain colored' },
+  { name: 'MSSQL', icon: 'devicon-microsoftsqlserver-plain colored' },
 ]
 
 const tools = [
   { name: 'Git', icon: 'devicon-git-plain colored' },
   { name: 'GitHub', icon: 'devicon-github-original colored' },
+  { name: 'Docker', icon: 'devicon-docker-plain colored' },
   { name: 'VS Code', icon: 'devicon-vscode-plain colored' },
   { name: 'Postman', icon: 'devicon-postman-plain colored' },
 ]
