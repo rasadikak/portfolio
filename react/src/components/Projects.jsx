@@ -107,8 +107,8 @@ function Projects() {
             Technologies:  Spring Boot, Spring Security, Spring Data JPA, MySQL, JWT
           </div>
           <div className={styles.buttons}>
-            <a href='https://github.com/moraspirit/epilogue-quiz-game-web-app.git' target='_blank' className={styles.github_btn}>View on Github</a>
-            <a href='https://quiz.moraspirit.com/' target='_blank' className={styles.demo_btn}>Demo</a>
+            <a href='https://github.com/rasadikak/boarding_project' target='_blank' className={styles.github_btn}>View on Github</a>
+            
             
           </div>
         </div>
