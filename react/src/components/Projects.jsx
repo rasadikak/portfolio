@@ -95,13 +95,12 @@ function Projects() {
          <div className={styles.card}>
           <h4 className={styles.title}>Boarding House Management System</h4>
           <p className={styles.description}>
-           A full-featured Spring Boot backend for managing a boarding house,
-            supporting Admin and Tenant roles with JWT authentication and Spring
-             Security method-level access control. Admins manage rooms, onboard
-              tenants, record rent payments, and resolve complaints, while tenants
-               view their profile, payments, and submit complaints — all enforced 
-               through per-endpoint role checks rather than duplicated admin/tenant
-                code. 
+           A backend REST API for managing a boarding house's day-to-day operations 
+           - rooms, tenants, rent payments, complaints, and notifications - built with
+            Spring Boot and secured with JWT authentication and role-based access
+             control for Admin and Tenant users. Admins manage the system end-to-end
+              while tenants have scoped access to their own data, with new accounts
+               provisioned securely through single-use email links 
           </p>
           <div className={styles.technology}>
             Technologies:  Spring Boot, Spring Security, Spring Data JPA, MySQL, JWT
