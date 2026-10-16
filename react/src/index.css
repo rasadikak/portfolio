@@ -8,32 +8,110 @@ html {
   scroll-behavior: smooth;
 }
 
+/* ========================================================
+   THEME VARIABLES
+   ======================================================== */
+
 /* Default is DARK mode */
 :root {
-  --bg-primary: #0f172a;
-  --bg-secondary: #1e293b;
-  --card-bg: #0f172a;
+  /* Translucent section colors so the animated background flows through */
+  --bg-primary: rgba(15, 23, 42, 0.25);
+  --bg-secondary: rgba(15, 23, 42, 0.45);
+  --card-bg: rgba(15, 23, 42, 0.85);
+
   --text-primary: #e2e8f0;
   --text-muted: #94a3b8;
-  --border: #2d3748;
+  --border: rgba(167, 139, 250, 0.25);
   --accent: #a78bfa;
   --accent-hover: #7c3aed;
-  --navbar-bg: #0f172a;
+  --navbar-bg: rgba(15, 23, 42, 0.85);
   --navbar-border: #3d4f6b;
-   --footer-bg: #020408; 
+  --footer-bg: rgba(2, 4, 8, 0.9);
+
+  /* Moving gradient palette - Dark Mode */
+  --grad-1: #090d16;
+  --grad-2: #1e1b4b; /* Deep Indigo */
+  --grad-3: #2e1065; /* Rich Violet (matches your accent) */
+  --grad-4: #0f172a; /* Slate 900 */
+  --grad-5: #172554; /* Midnight Blue */
 }
 
 /* Light mode — applied when .light class is on <html> */
 :root.light {
-  --bg-primary: #ffffff;
-  --bg-secondary: #f1f5f9;
-  --card-bg: #ffffff;
+  --bg-primary: rgba(255, 255, 255, 0.35);
+  --bg-secondary: rgba(241, 245, 249, 0.55);
+  --card-bg: rgba(255, 255, 255, 0.88);
+
   --text-primary: #0f172a;
   --text-muted: #64748b;
   --border: #e2e8f0;
   --accent: #7c3aed;
   --accent-hover: #6d28d9;
-  --navbar-bg: #ffffff;
+  --navbar-bg: rgba(255, 255, 255, 0.85);
   --navbar-border: #c7d0df;
-  --footer-bg: #cbd5e1; 
+  --footer-bg: rgba(203, 213, 225, 0.9);
+
+  /* Moving gradient palette - Light Mode */
+  --grad-1: #f8fafc;
+  --grad-2: #ede9fe; /* Soft Lavender */
+  --grad-3: #f3e8ff; /* Soft Violet */
+  --grad-4: #f1f5f9; /* Slate 100 */
+  --grad-5: #e0e7ff; /* Soft Indigo */
+}
+
+/* ========================================================
+   ANIMATED BACKGROUND (Directly on body)
+   ======================================================== */
+body {
+  min-height: 100vh;
+  color: var(--text-primary);
+  font-family: sans-serif;
+  overflow-x: hidden;
+
+  /* Multi-stop smooth flowing gradient */
+  background: linear-gradient(
+    -45deg,
+    var(--grad-1),
+    var(--grad-2),
+    var(--grad-3),
+    var(--grad-4),
+    var(--grad-5)
+  );
+  background-size: 300% 300%;
+  background-attachment: fixed;
+  animation: gradientFlow 3s ease-in-out infinite alternate;
+}
+
+@keyframes gradientFlow {
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 50% 100%;
+  }
+}
+
+/* ========================================================
+   FROSTED GLASS EFFECT FOR CARDS & NAV
+   Keeps all project details, text, and inputs sharp & legible
+   ======================================================== */
+[class*="card"] {
+  background-color: var(--card-bg) !important;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+[class*="navBar"], nav {
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+/* Respect user's motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  body {
+    animation: none;
+  }
 }
