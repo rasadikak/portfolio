@@ -16,7 +16,7 @@ function Footer(){
                     <a href='mailto:rasadikak@gmail.com' className={styles.link}target='_blank'>
                         <i className='fa-regular fa-envelope'></i>
                     </a>
-                    <a href='https://www.instagram.com/rasadika.k?igsh=MTUxN2xhazE1b242ag==' className={styles.link} target='_blank'>
+                    <a href='https://www.instagram.com/kaushaniiiiiii?dlrf=MTUxN2xhazE1b242ag==' className={styles.link} target='_blank'>
                          <i className='fa-brands fa-instagram'></i>
                     </a>
                 </div>
