@@ -129,6 +129,7 @@ function Projects() {
           </div>
           <div className={styles.buttons}>
             <a href='https://github.com/rasadikak/blog_webapp' target='_blank' className={styles.github_btn}>View on Github</a>
+            <a href='http://13.60.190.172:5173/' target='_blank' className={styles.demo_btn}>Frontend</a>
             
             
           </div>
