@@ -7,7 +7,7 @@ function Articles() {
       title: 'Stop Confusing Modules, Libraries, and Frameworks (Python Guide)',
       description: 'This article explains difference among modules, libraries and frameworks.',
       date: 'March 2026',
-      link: 'https://medium.com/stop-confusing-modules-libraries-and-frameworks-python-guide-4757c1ea4444'
+      link: 'https://medium.com/technology-hits/stop-confusing-modules-libraries-and-frameworks-python-guide-4757c1ea4444'
     }
     
 
