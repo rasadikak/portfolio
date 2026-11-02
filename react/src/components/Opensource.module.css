@@ -1,0 +1,150 @@
+.main {
+  background-color: var(--bg-secondary);
+  padding: 80px;
+}
+
+.h2 {
+  color: var(--accent);
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 40px;
+  letter-spacing: 2px;
+  font-size: 2rem;
+  font-family: sans-serif;
+}
+
+.mainContainer {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.card {
+  background-color: var(--bg-primary);
+  border-radius: 12px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 12px;
+  border: 1px solid var(--border);
+  width: 400px;
+  transition: transform 0.3s, border-color 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  border-color: var(--accent);
+}
+
+.badge {
+  align-self: center;
+  color: var(--accent);
+  font-size: 0.8rem;
+  font-weight: 600;
+  border: 1px solid var(--accent);
+  padding: 2px 12px;
+  border-radius: 20px;
+  font-family: sans-serif;
+  letter-spacing: 0.5px;
+}
+
+.title {
+  color: var(--text-primary);
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-align: center;
+  letter-spacing: 0.5px;
+  font-family: sans-serif;
+}
+
+.description {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  font-weight: 400;
+  text-align: center;
+  line-height: 1.7;
+  font-family: sans-serif;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  flex-grow: 1;
+}
+
+.list li {
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  text-align: center;
+  line-height: 1.6;
+  font-family: sans-serif;
+}
+
+.technology {
+  color: var(--accent);
+  font-size: 1rem;
+  font-weight: 500;
+  background: rgba(167, 139, 250, 0.1);
+  padding: 4px 12px;
+  border-radius: 20px;
+  display: inline-block;
+  text-align: center;
+  font-family: sans-serif;
+  line-height: 1.7;
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 8px;
+}
+
+.github_btn {
+  background-color: var(--accent);
+  color: white;
+  padding: 8px 16px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.85rem;
+  transition: background 0.3s;
+  font-family: sans-serif;
+  text-decoration: none;
+}
+
+.github_btn:hover {
+  background-color: var(--accent-hover);
+}
+
+.demo_btn {
+  text-decoration: none;
+  background-color: transparent;
+  border: 2px solid var(--accent);
+  color: var(--accent);
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.85rem;
+  transition: all 0.3s;
+  font-family: sans-serif;
+}
+
+.demo_btn:hover {
+  background-color: rgba(167, 139, 250, 0.1);
+}
+
+
+@media (max-width: 768px) {
+  .main { padding: 40px 20px; }
+  .card { width: 100%; }
+}
