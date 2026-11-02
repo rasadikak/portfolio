@@ -3,7 +3,7 @@ import Contact from "./components/Contact"
 import Projects  from "./components/Projects"
 import Articles  from "./components/Articles"
 import About  from "./components/About"
-import OpenSource from './components/Opensource'
+import OpenSource from './components/OpenSource'
 import NavBar  from "./components/NavBar"
 import Hero from "./components/Hero"
 import Footer from "./components/Footer"
