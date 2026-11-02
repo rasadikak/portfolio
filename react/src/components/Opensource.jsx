@@ -4,7 +4,7 @@ function OpenSource() {
   return (
     <>
     <div id='opensource' className={styles.main}>
-      <h2 className={styles.h2}>Open Source</h2>
+      <h2 className={styles.h2}>Open Source Contribution</h2>
       <div className={styles.mainContainer}>
 
 
@@ -22,7 +22,7 @@ function OpenSource() {
             <li>Forked the repository and worked on a separate branch</li>
             <li>Followed the project's contributing guide and issue linking rules</li>
             <li>Passed the automated review checks and got the pull request merged</li>
-            <li>Set up the project locally and explored its codebase and test suite</li>
+           
           </ul>
           <div className={styles.technology}>
             Technologies: Git, GitHub, Next.js, TypeScript, JSON
