@@ -9,6 +9,7 @@ function Navbar({toggleTheme, isDark}) {
 
     <div className={styles.navLinks}>
       <a href='#about'>About</a>
+      <a href='#education'>Education</a>
       <a href='#projects'>Projects</a>
       <a href='#articles'>Articles</a>
       <a href='#contact'>Contact</a>
