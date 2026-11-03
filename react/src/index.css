@@ -13,87 +13,68 @@ html {
    ======================================================== */
 
 /* Default is DARK mode */
+/* Dark Mode */
 :root {
-  /* Translucent section colors so the animated background flows through */
-  --bg-primary: rgba(15, 23, 42, 0.25);
-  --bg-secondary: rgba(15, 23, 42, 0.45);
-  --card-bg: rgba(15, 23, 42, 0.85);
+  --bg-primary: rgba(6, 28, 22, 0.25);
+  --bg-secondary: rgba(6, 28, 22, 0.45);
+  --card-bg: rgba(8, 20, 18, 0.88);
 
-  --text-primary: #e2e8f0;
+  --text-primary: #ecfdf5;
   --text-muted: #94a3b8;
-  --border: rgba(167, 139, 250, 0.25);
-  --accent: #a78bfa;
-  --accent-hover: #7c3aed;
-  --navbar-bg: rgba(15, 23, 42, 0.85);
-  --navbar-border: #3d4f6b;
-  --footer-bg: rgba(2, 4, 8, 0.9);
+  --border: rgba(52, 211, 153, 0.25);
+  --accent: #34d399;          /* Fresh Mint Emerald */
+  --accent-hover: #059669;
+  --accent-subtle: rgba(52, 211, 153, 0.12);
+  --navbar-bg: rgba(6, 28, 22, 0.85);
+  --navbar-border: #134e4a;
+  --footer-bg: rgba(2, 10, 8, 0.92);
 
-  /* Moving gradient palette - Dark Mode */
-  --grad-1: #090d16;
-  --grad-2: #1e1b4b; /* Deep Indigo */
-  --grad-3: #2e1065; /* Rich Violet (matches your accent) */
-  --grad-4: #0f172a; /* Slate 900 */
-  --grad-5: #172554; /* Midnight Blue */
-
-  --accent-subtle: rgba(167, 139, 250, 0.12);
+  --grad-1: #040d0a;
+  --grad-2: #064e3b; /* Deep Forest Pine */
+  --grad-3: #022c22; /* Obsidian Teal */
+  --grad-4: #0f172a;
+  --grad-5: #134e4a;
 }
 
-/* Light mode — applied when .light class is on <html> */
+/* Light Mode */
 :root.light {
-  --bg-primary: rgba(255, 255, 255, 0.35);
-  --bg-secondary: rgba(241, 245, 249, 0.55);
-  --card-bg: rgba(255, 255, 255, 0.88);
+  --bg-primary: rgba(255, 255, 255, 0.4);
+  --bg-secondary: rgba(240, 253, 250, 0.6);
+  --card-bg: rgba(255, 255, 255, 0.9);
 
-  --text-primary: #0f172a;
-  --text-muted: #64748b;
-  --border: #e2e8f0;
-  --accent: #7c3aed;
-  --accent-hover: #6d28d9;
+  --text-primary: #064e3b;
+  --text-muted: #4b5563;
+  --border: #d1fae5;
+  --accent: #059669;
+  --accent-hover: #047857;
+  --accent-subtle: rgba(5, 150, 105, 0.1);
   --navbar-bg: rgba(255, 255, 255, 0.85);
-  --navbar-border: #c7d0df;
-  --footer-bg: rgba(203, 213, 225, 0.9);
+  --navbar-border: #a7f3d0;
+  --footer-bg: rgba(209, 250, 229, 0.9);
 
-  /* Moving gradient palette - Light Mode */
   --grad-1: #f8fafc;
-  --grad-2: #ede9fe; /* Soft Lavender */
-  --grad-3: #f3e8ff; /* Soft Violet */
-  --grad-4: #f1f5f9; /* Slate 100 */
-  --grad-5: #e0e7ff; /* Soft Indigo */
+  --grad-2: #ecfdf5;
+  --grad-3: #f0fdf4;
+  --grad-4: #f1f5f9;
+  --grad-5: #dcfce7;
 }
+
+
 
 /* ========================================================
-   ANIMATED BACKGROUND (Directly on body)
+   STATIC CLEAN BACKGROUND
    ======================================================== */
 body {
   min-height: 100vh;
   color: var(--text-primary);
   font-family: sans-serif;
   overflow-x: hidden;
-
-  /* Multi-stop smooth flowing gradient */
-  background: linear-gradient(
-    -45deg,
-    var(--grad-1),
-    var(--grad-2),
-    var(--grad-3),
-    var(--grad-4),
-    var(--grad-5)
-  );
-  background-size: 300% 300%;
-  background-attachment: fixed;
-  animation: gradientFlow 3s ease-in-out infinite alternate;
+  background-color: var(--grad-1);
 }
 
-@keyframes gradientFlow {
-  0% {
-    background-position: 0% 0%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 50% 100%;
-  }
+#root {
+  position: relative;
+  z-index: 1;
 }
 
 /* ========================================================
@@ -109,11 +90,4 @@ body {
 [class*="navBar"], nav {
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
-}
-
-/* Respect user's motion preferences */
-@media (prefers-reduced-motion: reduce) {
-  body {
-    animation: none;
-  }
 }
