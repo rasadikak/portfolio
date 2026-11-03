@@ -3,17 +3,23 @@ function About() {
 
   const frontendSkills = [
   { name: 'React', icon: 'devicon-react-original colored' },
+  { name: 'Next.js', icon: 'devicon-nextjs-plain' },
   { name: 'HTML', icon: 'devicon-html5-plain colored' },
   { name: 'CSS', icon: 'devicon-css3-plain colored' },
   { name: 'JavaScript', icon: 'devicon-javascript-plain colored' },
+  { name: 'TypeScript', icon: 'devicon-typescript-plain colored' },
   { name: 'Tailwind', icon: 'devicon-tailwindcss-plain colored' },
 ]
 
 const backendSkills = [
   { name: 'Python', icon: 'devicon-python-plain colored' },
+  { name: 'Node.js', icon: 'devicon-nodejs-plain colored' },
   { name: 'Nest.js', icon: 'devicon-nestjs-plain colored' },
    { name: 'Express.js', icon: 'devicon-express-original colored' },
+  { name: 'FastAPI', icon: 'devicon-fastapi-plain colored' },
+  { name: 'Flask', icon: 'devicon-flask-original colored' },
   { name: 'Java', icon: 'devicon-java-plain colored' },
+  { name: 'Spring Boot', icon: 'devicon-spring-original colored' },
   { name: '.ASP.NET', icon: 'devicon-dotnetcore-plain colored' },
   { name: 'C', icon: 'devicon-c-plain colored' }
 ]
@@ -23,6 +29,27 @@ const databaseSkills = [
   { name: 'MySQL', icon: 'devicon-mysql-plain colored' },
   { name: 'Firebase', icon: 'devicon-firebase-plain colored' },
   { name: 'MSSQL', icon: 'devicon-microsoftsqlserver-plain colored' },
+  { name: 'SQLite', icon: 'devicon-sqlite-plain colored' },
+  { name: 'Prisma ORM', icon: 'devicon-prisma-original' },
+  { name: 'SQLAlchemy ORM', icon: 'devicon-sqlalchemy-original colored' },
+]
+
+const mlSkills = [
+  { name: 'PyTorch', icon: 'devicon-pytorch-original colored' },
+  { name: 'TensorFlow/Keras', icon: 'devicon-tensorflow-original colored' },
+  { name: 'Scikit-learn', icon: 'devicon-scikitlearn-plain colored' },
+  { name: 'OpenCV', icon: 'devicon-opencv-plain colored' },
+  { name: 'Pandas', icon: 'devicon-pandas-original colored' },
+  { name: 'NumPy', icon: 'devicon-numpy-original colored' },
+]
+
+
+
+const cloudSkills = [
+  { name: 'AWS (EC2)', icon: 'devicon-amazonwebservices-plain-wordmark colored' },
+  { name: 'Google Cloud Run', icon: 'devicon-googlecloud-plain colored' },
+  { name: 'Linux (Ubuntu)', icon: 'devicon-ubuntu-plain colored' },
+  { name: 'GitHub Actions', icon: 'devicon-githubactions-plain colored' },
 ]
 
 const tools = [
@@ -31,6 +58,9 @@ const tools = [
   { name: 'Docker', icon: 'devicon-docker-plain colored' },
   { name: 'VS Code', icon: 'devicon-vscode-plain colored' },
   { name: 'Postman', icon: 'devicon-postman-plain colored' },
+  { name: 'Google Colab', icon: 'devicon-googlecolab-original colored' },
+  { name: 'Jupyter Notebook', icon: 'devicon-jupyter-plain colored' },
+  { name: 'Figma', icon: 'devicon-figma-plain colored' },
 ]
   
   return (
@@ -89,6 +119,34 @@ const tools = [
                 
                 </div>
               
+      
+            ))}
+        </div>
+
+        <div className={styles.card}>
+            <h3 className={styles.title}>Machine Learning & Data</h3>
+            {mlSkills.map((skill)=>(
+              
+              <div key={skill.name} className={styles.skill}>
+                <i className={skill.icon}></i>
+                <span>{skill.name}</span>
+                
+                </div>
+      
+            ))}
+        </div>
+
+        
+
+        <div className={styles.card}>
+            <h3 className={styles.title}>Cloud</h3>
+            {cloudSkills.map((skill)=>(
+              
+              <div key={skill.name} className={styles.skill}>
+                <i className={skill.icon}></i>
+                <span>{skill.name}</span>
+                
+                </div>
       
             ))}
         </div>
