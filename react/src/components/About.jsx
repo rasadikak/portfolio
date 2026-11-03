@@ -49,13 +49,13 @@ const cloudSkills = [
   { name: 'AWS (EC2)', icon: 'devicon-amazonwebservices-plain-wordmark colored' },
   { name: 'Google Cloud Run', icon: 'devicon-googlecloud-plain colored' },
   { name: 'Linux (Ubuntu)', icon: 'devicon-ubuntu-plain colored' },
+  { name: 'Git', icon: 'devicon-git-plain colored' },
+  { name: 'Docker', icon: 'devicon-docker-plain colored' },
   { name: 'GitHub Actions', icon: 'devicon-githubactions-plain colored' },
 ]
 
 const tools = [
-  { name: 'Git', icon: 'devicon-git-plain colored' },
-  { name: 'GitHub', icon: 'devicon-github-original colored' },
-  { name: 'Docker', icon: 'devicon-docker-plain colored' },
+  
   { name: 'VS Code', icon: 'devicon-vscode-plain colored' },
   { name: 'Postman', icon: 'devicon-postman-plain colored' },
   { name: 'Google Colab', icon: 'devicon-googlecolab-original colored' },
