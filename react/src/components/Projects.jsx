@@ -10,104 +10,154 @@ function Projects() {
 
 
         <div className={styles.card}>
-          <h4 className={styles.title}>AI Trip Planner Web App</h4>
-          <p className={styles.description}>
-            AI Trip Planner is an intelligent web application that generates 
-            personalized travel plans based on user preferences such as destination,
-             budget, accomodation and duration etc. It integrates AI models and external
-              APIs to provide smart recommendations and real-time travel insights.
-          </p>
-          <div className={styles.technology}>
-            Technologies: FastAPI, HTML, Tailwind CSS, PostgreSQL
+          <div className={styles.imageWrapper}>
+            <img
+              src='/projects/ai-trip-planner.png'
+              alt='AI Trip Planner Web App'
+              className={styles.image}
+              onError={(e) => { e.target.style.display = 'none' }}
+            />
           </div>
-          <div className={styles.buttons}>
-            <a href='https://github.com/rasadikak/AI_trip_planning_webapp.git' target='_blank' className={styles.github_btn}>View on Github</a>
-            <a href='https://serendib-ai-902076322619.asia-south1.run.app/frontend/home/home.html' target='_blank' className={styles.demo_btn}>Demo</a>
-            <a href='https://huggingface.co/datasets/kaushaniR/Sri-lankan_attraction_places' target='_blank' className={styles.demo_btn}>Dataset</a>
-          </div>
-        </div>
-
-
-        <div className={styles.card}>
-          <h4 className={styles.title}>AI-Crop-Disease-Yield-Platform</h4>
-          <p className={styles.description}>
-            AgriSense is an AI-powered agricultural platform that gives 
-            Sri Lankan farmers real-time crop yield predictions, plant disease
-             detection, and weather anomaly alerts. Built with React, Express.js,
-              and FastAPI, it combines machine learning models with an AI chatbot
-               to support smarter, data-driven farming decisions.
-          </p>
-          <div className={styles.technology}>
-            Technologies: React, Tailwind CSS Express.js, FastAPI, PostgreSQL
-          </div>
-          <div className={styles.buttons}>
-          <a href='https://github.com/rasadikak/AI-Crop-Disease-Yield-Platform.git' target='_blank' className={styles.github_btn}>View on Github</a>
-          <a href='https://ai-crop-disease-yield-platform.vercel.app/' target='_blank' className={styles.demo_btn}>Frontend</a>
+          <div className={styles.content}>
+            <h4 className={styles.title}>AI Trip Planner Web App</h4>
+            <p className={styles.description}>
+              AI Trip Planner is an intelligent web application that generates 
+              personalized travel plans based on user preferences such as destination,
+               budget, accomodation and duration etc. It integrates AI models and external
+                APIs to provide smart recommendations and real-time travel insights.
+            </p>
+            <div className={styles.technology}>
+              Technologies: FastAPI, HTML, Tailwind CSS, PostgreSQL
+            </div>
+            <div className={styles.buttons}>
+              <a href='https://github.com/rasadikak/AI_trip_planning_webapp.git' target='_blank' className={styles.github_btn}>View on Github</a>
+              <a href='https://serendib-ai-902076322619.asia-south1.run.app/frontend/home/home.html' target='_blank' className={styles.demo_btn}>Demo</a>
+              <a href='https://huggingface.co/datasets/kaushaniR/Sri-lankan_attraction_places' target='_blank' className={styles.demo_btn}>Dataset</a>
+            </div>
           </div>
         </div>
 
 
         <div className={styles.card}>
-          <h4 className={styles.title}>Smart Credit API- Second Year Software Project</h4>
-          <p className={styles.description}>
-            Smart Credit+ is a peer-to-peer digital lending platform that
-             connects borrowers, lenders, and administrators through a 
-             transparent and structured digital lending workflow. Built 
-             with React, Vite, NestJS, Firestore, and cloud-based services, it
-              supports borrower and lender mobile applications, KYC verification, 
-              loan advertisements, digital agreements, QR-based repayment recording,
-               chat communication, portfolio analytics, and administrative 
-               monitoring to make the lending process more secure, organized, 
-               and accessible.
-          </p>
-          <div className={styles.technology}>
-            Technologies: React, React native, nest.js
+          <div className={styles.imageWrapper}>
+            <img
+              src='/projects/agrisense.png'
+              alt='AI-Crop-Disease-Yield-Platform'
+              className={styles.image}
+              onError={(e) => { e.target.style.display = 'none' }}
+            />
           </div>
-          <div className={styles.buttons}>
-            <a href='https://github.com/NishenAMJ/Smart_Credit_API.git' target='_blank' className={styles.github_btn}>View on Github</a>
-            <a href='' target='_blank' className={styles.demo_btn}>Demo</a>
+          <div className={styles.content}>
+            <h4 className={styles.title}>AI-Crop-Disease-Yield-Platform</h4>
+            <p className={styles.description}>
+              AgriSense is an AI-powered agricultural platform that gives 
+              Sri Lankan farmers real-time crop yield predictions, plant disease
+               detection, and weather anomaly alerts. Built with React, Express.js,
+                and FastAPI, it combines machine learning models with an AI chatbot
+                 to support smarter, data-driven farming decisions.
+            </p>
+            <div className={styles.technology}>
+              Technologies: React, Tailwind CSS Express.js, FastAPI, PostgreSQL
+            </div>
+            <div className={styles.buttons}>
+            <a href='https://github.com/rasadikak/AI-Crop-Disease-Yield-Platform.git' target='_blank' className={styles.github_btn}>View on Github</a>
+            <a href='https://ai-crop-disease-yield-platform.vercel.app/' target='_blank' className={styles.demo_btn}>Frontend</a>
+            </div>
+          </div>
+        </div>
+
+
+        <div className={styles.card}>
+          <div className={styles.imageWrapper}>
+            <img
+              src='/projects/smart-credit.png'
+              alt='Smart Credit API'
+              className={styles.image}
+              onError={(e) => { e.target.style.display = 'none' }}
+            />
+          </div>
+          <div className={styles.content}>
+            <h4 className={styles.title}>Smart Credit API- Second Year Software Project</h4>
+            <p className={styles.description}>
+              Smart Credit+ is a peer-to-peer digital lending platform that
+               connects borrowers, lenders, and administrators through a 
+               transparent and structured digital lending workflow. Built 
+               with React, Vite, NestJS, Firestore, and cloud-based services, it
+                supports borrower and lender mobile applications, KYC verification, 
+                loan advertisements, digital agreements, QR-based repayment recording,
+                 chat communication, portfolio analytics, and administrative 
+                 monitoring to make the lending process more secure, organized, 
+                 and accessible.
+            </p>
+            <div className={styles.technology}>
+              Technologies: React, React native, nest.js
+            </div>
+            <div className={styles.buttons}>
+              <a href='https://github.com/NishenAMJ/Smart_Credit_API.git' target='_blank' className={styles.github_btn}>View on Github</a>
+              <a href='' target='_blank' className={styles.demo_btn}>Demo</a>
+            </div>
           </div>
         </div>
 
 
 
          <div className={styles.card}>
-          <h4 className={styles.title}>Quiet Corners | Full-Stack Blog Platform</h4>
-          <p className={styles.description}>
-            Quiet Corners is a full-stack personal blog platform featuring JWT-based
-            authentication for secure content management, category filtering, keyword
-            search, and a public commenting system for readers. Built with an ASP.NET
-            Core Web API backend and a React frontend, with Entity Framework Core and
-            SQLite powering a relational schema for posts, categories, comments, and users.
-          </p>
-          <div className={styles.technology}>
-            Technologies:  ASP.NET Core, Entity Framework Core, SQLite, React
+          <div className={styles.imageWrapper}>
+            <img
+              src='/projects/quiet-corners.png'
+              alt='Quiet Corners Full-Stack Blog Platform'
+              className={styles.image}
+              onError={(e) => { e.target.style.display = 'none' }}
+            />
           </div>
-          <div className={styles.buttons}>
-            <a href='https://github.com/rasadikak/blog_webapp' target='_blank' className={styles.github_btn}>View on Github</a>
-            <a href='http://13.60.190.172/' target='_blank' className={styles.demo_btn}>Demo</a>
-            
-            
+          <div className={styles.content}>
+            <h4 className={styles.title}>Quiet Corners | Full-Stack Blog Platform</h4>
+            <p className={styles.description}>
+              Quiet Corners is a full-stack personal blog platform featuring JWT-based
+              authentication for secure content management, category filtering, keyword
+              search, and a public commenting system for readers. Built with an ASP.NET
+              Core Web API backend and a React frontend, with Entity Framework Core and
+              SQLite powering a relational schema for posts, categories, comments, and users.
+            </p>
+            <div className={styles.technology}>
+              Technologies:  ASP.NET Core, Entity Framework Core, SQLite, React
+            </div>
+            <div className={styles.buttons}>
+              <a href='https://github.com/rasadikak/blog_webapp' target='_blank' className={styles.github_btn}>View on Github</a>
+              <a href='http://13.60.190.172/' target='_blank' className={styles.demo_btn}>Demo</a>
+              
+              
+            </div>
           </div>
         </div>
 
 
-              <div className={styles.card}>
-          <h4 className={styles.title}>Epilogue Quiz Game Web App | MoraSpirit</h4>
-          <p className={styles.description}>
-           Epilogue Quiz Game Web App is a full-stack, gamified quiz platform
-            designed for the MoraSpirit community, featuring sequential level-locking 
-            and real-time score tracking to power a live, puzzle-based competition. 
-            It has been used by around 300 real-time registered users, providing a secure
-             and interactive web experience built with Next.js, Prisma, and MySQL.
-          </p>
-          <div className={styles.technology}>
-            Technologies:  Next.js, Prisma, MySQL
+        <div className={styles.card}>
+          <div className={styles.imageWrapper}>
+            <img
+              src='/projects/epilogue-quiz.png'
+              alt='Epilogue Quiz Game Web App'
+              className={styles.image}
+              onError={(e) => { e.target.style.display = 'none' }}
+            />
           </div>
-          <div className={styles.buttons}>
-            <a href='https://github.com/moraspirit/epilogue-quiz-game-web-app.git' target='_blank' className={styles.github_btn}>View on Github</a>
-            <a href='https://quiz.moraspirit.com/' target='_blank' className={styles.demo_btn}>Demo</a>
-            
+          <div className={styles.content}>
+            <h4 className={styles.title}>Epilogue Quiz Game Web App | MoraSpirit</h4>
+            <p className={styles.description}>
+             Epilogue Quiz Game Web App is a full-stack, gamified quiz platform
+              designed for the MoraSpirit community, featuring sequential level-locking 
+              and real-time score tracking to power a live, puzzle-based competition. 
+              It has been used by around 300 real-time registered users, providing a secure
+               and interactive web experience built with Next.js, Prisma, and MySQL.
+            </p>
+            <div className={styles.technology}>
+              Technologies:  Next.js, Prisma, MySQL
+            </div>
+            <div className={styles.buttons}>
+              <a href='https://github.com/moraspirit/epilogue-quiz-game-web-app.git' target='_blank' className={styles.github_btn}>View on Github</a>
+              <a href='https://quiz.moraspirit.com/' target='_blank' className={styles.demo_btn}>Demo</a>
+              
+            </div>
           </div>
         </div>
 
@@ -115,22 +165,32 @@ function Projects() {
 
 
          <div className={styles.card}>
-          <h4 className={styles.title}>Boarding House Management System</h4>
-          <p className={styles.description}>
-           A backend REST API for managing a boarding house's day-to-day operations 
-           - rooms, tenants, rent payments, complaints, and notifications - built with
-            Spring Boot and secured with JWT authentication and role-based access
-             control for Admin and Tenant users. Admins manage the system end-to-end
-              while tenants have scoped access to their own data, with new accounts
-               provisioned securely through single-use email links 
-          </p>
-          <div className={styles.technology}>
-            Technologies:  Spring Boot, Spring Security, Spring Data JPA, MySQL, JWT
+          <div className={styles.imageWrapper}>
+            <img
+              src='/projects/boarding-house.png'
+              alt='Boarding House Management System'
+              className={styles.image}
+              onError={(e) => { e.target.style.display = 'none' }}
+            />
           </div>
-          <div className={styles.buttons}>
-            <a href='https://github.com/rasadikak/boarding_project' target='_blank' className={styles.github_btn}>View on Github</a>
-            
-            
+          <div className={styles.content}>
+            <h4 className={styles.title}>Boarding House Management System</h4>
+            <p className={styles.description}>
+             A backend REST API for managing a boarding house's day-to-day operations 
+             - rooms, tenants, rent payments, complaints, and notifications - built with
+              Spring Boot and secured with JWT authentication and role-based access
+               control for Admin and Tenant users. Admins manage the system end-to-end
+                while tenants have scoped access to their own data, with new accounts
+                 provisioned securely through single-use email links 
+            </p>
+            <div className={styles.technology}>
+              Technologies:  Spring Boot, Spring Security, Spring Data JPA, MySQL, JWT
+            </div>
+            <div className={styles.buttons}>
+              <a href='https://github.com/rasadikak/boarding_project' target='_blank' className={styles.github_btn}>View on Github</a>
+              
+              
+            </div>
           </div>
         </div>
 
@@ -143,57 +203,87 @@ function Projects() {
 
 
         <div className={styles.card}>
-          <h4 className={styles.title}>Laptop Price predictor</h4>
-          <p className={styles.description}>
-           Laptop Price Predictor is a machine learning-based web application 
-           designed to estimate laptop prices based on user-selected specifications
-            such as brand, RAM, processor, and storage etc. It provides accurate 
-            predictions through a trained model and an interactive user interface.
-          </p>
-          <div className={styles.technology}>
-            Technologies:  Flask, Pandas, NumPy, Scikit-learn, Jupyter Notebook, HTML,CSS
+          <div className={styles.imageWrapper}>
+            <img
+              src='/projects/laptop-price.png'
+              alt='Laptop Price predictor'
+              className={styles.image}
+              onError={(e) => { e.target.style.display = 'none' }}
+            />
           </div>
-          <div className={styles.buttons}>
-            <a href='https://github.com/rasadikak/Laptop_Price_Predictor_new.git' target='_blank' className={styles.github_btn}>View on Github</a>
-            <a href='https://rasadikak.pythonanywhere.com/' target='_blank' className={styles.demo_btn}>Demo</a>
-            
+          <div className={styles.content}>
+            <h4 className={styles.title}>Laptop Price predictor</h4>
+            <p className={styles.description}>
+             Laptop Price Predictor is a machine learning-based web application 
+             designed to estimate laptop prices based on user-selected specifications
+              such as brand, RAM, processor, and storage etc. It provides accurate 
+              predictions through a trained model and an interactive user interface.
+            </p>
+            <div className={styles.technology}>
+              Technologies:  Flask, Pandas, NumPy, Scikit-learn, Jupyter Notebook, HTML,CSS
+            </div>
+            <div className={styles.buttons}>
+              <a href='https://github.com/rasadikak/Laptop_Price_Predictor_new.git' target='_blank' className={styles.github_btn}>View on Github</a>
+              <a href='https://rasadikak.pythonanywhere.com/' target='_blank' className={styles.demo_btn}>Demo</a>
+              
+            </div>
           </div>
         </div>
 
 
         <div className={styles.card}>
-          <h4 className={styles.title}>Face Mask Detection Web App</h4>
-          <p className={styles.description}>
-           Face Mask Detection Web App is a computer vision-based application
-            designed to detect whether a person is wearing a face mask or
-             not using image classification techniques. It provides real-time
-              predictions through an interactive web interface.
-          </p>
-          <div className={styles.technology}>
-            Technologies: Python, TensorFlow / Keras, OpenCV, HTML, CSS
+          <div className={styles.imageWrapper}>
+            <img
+              src='/projects/face-mask.png'
+              alt='Face Mask Detection Web App'
+              className={styles.image}
+              onError={(e) => { e.target.style.display = 'none' }}
+            />
           </div>
-          <div className={styles.buttons}>
-            <a href='https://github.com/rasadikak/Face-Mask-Detection.git' target='_blank' className={styles.github_btn}>View on Github</a>
-            <a href='' target='_blank' className={styles.demo_btn}>Demo</a>
+          <div className={styles.content}>
+            <h4 className={styles.title}>Face Mask Detection Web App</h4>
+            <p className={styles.description}>
+             Face Mask Detection Web App is a computer vision-based application
+              designed to detect whether a person is wearing a face mask or
+               not using image classification techniques. It provides real-time
+                predictions through an interactive web interface.
+            </p>
+            <div className={styles.technology}>
+              Technologies: Python, TensorFlow / Keras, OpenCV, HTML, CSS
+            </div>
+            <div className={styles.buttons}>
+              <a href='https://github.com/rasadikak/Face-Mask-Detection.git' target='_blank' className={styles.github_btn}>View on Github</a>
+              <a href='' target='_blank' className={styles.demo_btn}>Demo</a>
+            </div>
           </div>
         </div>
 
 
 
         <div className={styles.card}>
-          <h4 className={styles.title}>Image Generator App</h4>
-          <p className={styles.description}>
-            Image Generator Web app is an AI-powered web application that generates 
-            images from user-provided text prompts. It allows users to create 
-            unique visuals using artificial intelligence models through an
-             easy-to-use interface.
-          </p>
-          <div className={styles.technology}>
-            Technologies: Flask, Hugging Face Inference API, HTML,CSS
+          <div className={styles.imageWrapper}>
+            <img
+              src='/projects/image-generator.png'
+              alt='Image Generator App'
+              className={styles.image}
+              onError={(e) => { e.target.style.display = 'none' }}
+            />
           </div>
-          <div className={styles.buttons}>
-            <a href='https://github.com/rasadikak/Text_to_Image_generator_new.git' target='_blank' className={styles.github_btn}>View on Github</a>
-            <a href='https://kaushani.pythonanywhere.com/' target='_blank' className={styles.demo_btn}>Demo</a>
+          <div className={styles.content}>
+            <h4 className={styles.title}>Image Generator App</h4>
+            <p className={styles.description}>
+              Image Generator Web app is an AI-powered web application that generates 
+              images from user-provided text prompts. It allows users to create 
+              unique visuals using artificial intelligence models through an
+               easy-to-use interface.
+            </p>
+            <div className={styles.technology}>
+              Technologies: Flask, Hugging Face Inference API, HTML,CSS
+            </div>
+            <div className={styles.buttons}>
+              <a href='https://github.com/rasadikak/Text_to_Image_generator_new.git' target='_blank' className={styles.github_btn}>View on Github</a>
+              <a href='https://kaushani.pythonanywhere.com/' target='_blank' className={styles.demo_btn}>Demo</a>
+            </div>
           </div>
         </div>
 
