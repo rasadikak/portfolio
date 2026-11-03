@@ -1,0 +1,242 @@
+.main {
+  background-color: var(--bg-primary);
+  padding: 80px 20px;
+  min-height: 100vh;
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  max-width: 960px;
+  width: 100%;
+}
+
+/* ========================================================
+   HEADER STYLING
+   ======================================================== */
+.header {
+  margin-bottom: 60px;
+  text-align: left;
+}
+
+.eyebrow {
+  color: var(--accent);
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+  display: inline-block;
+}
+
+.title {
+  color: var(--accent);
+  font-weight: 600;
+  font-family: sans-serif;
+  text-align: left;
+  margin-bottom: 16px;
+  letter-spacing: 2px;
+  font-size: 2rem;
+}
+
+.subtitle {
+  color: var(--text-muted);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.7;
+  max-width: 650px;
+}
+
+/* ========================================================
+   TIMELINE LAYOUT
+   ======================================================== */
+.timeline {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.timelineItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 32px;
+  position: relative;
+  padding-bottom: 48px;
+}
+
+/* Timeline Marker (Dot + Line) */
+.markerContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  width: 24px;
+  flex-shrink: 0;
+  padding-top: 6px;
+}
+
+.dot {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: var(--accent);
+  box-shadow: 0 0 0 4px rgba(167, 139, 250, 0.25), 0 0 14px var(--accent);
+  z-index: 2;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.timelineItem:hover .dot {
+  transform: scale(1.25);
+  box-shadow: 0 0 0 6px rgba(167, 139, 250, 0.35), 0 0 20px var(--accent);
+}
+
+.line {
+  position: absolute;
+  top: 22px;
+  bottom: -48px;
+  width: 2px;
+  background: linear-gradient(to bottom, var(--accent), var(--border));
+  z-index: 1;
+}
+
+/* Keeps line under the 3rd circle and gives it a smooth bottom fade */
+.timelineItem:last-child {
+  padding-bottom: 48px;
+}
+
+.timelineItem:last-child .line {
+  height: 60px;
+  bottom: auto;
+  background: linear-gradient(to bottom, var(--accent), transparent);
+}
+
+/* Year Display - Fixed width so 2024 - 2028 does not push the card */
+.yearContainer {
+  width: 200px;
+  min-width: 200px;
+  flex-shrink: 0;
+  padding-top: 2px;
+  white-space: nowrap;
+}
+
+.year {
+  color: var(--accent);
+  font-size: 1.8rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  line-height: 1.2;
+}
+
+/* ========================================================
+   CARD STYLING
+   ======================================================== */
+.card {
+  background-color: var(--bg-primary);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 24px 28px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  border-color: var(--accent);
+  box-shadow: 0 10px 25px -5px rgba(167, 139, 250, 0.15);
+}
+
+.badge {
+  background-color: rgba(167, 139, 250, 0.15);
+  border: 1px solid rgba(167, 139, 250, 0.3);
+  color: var(--accent);
+  font-size: 0.85rem;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 6px;
+  width: fit-content;
+  letter-spacing: 0.5px;
+  margin-bottom: 4px;
+}
+
+.cardTitle {
+  color: var(--text-primary);
+  font-size: 1.25rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  line-height: 1.4;
+}
+
+.institution {
+  color: var(--accent);
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.description {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+/* ========================================================
+   MOBILE RESPONSIVENESS
+   ======================================================== */
+@media (max-width: 768px) {
+  .main {
+    padding: 40px 20px;
+  }
+
+  .header {
+    margin-bottom: 40px;
+    text-align: left;
+  }
+
+  .title {
+    font-size: 1.8rem;
+    text-align: left;
+  }
+
+  .timelineItem {
+    display: grid;
+    grid-template-columns: 24px 1fr;
+    grid-template-areas:
+      "marker year"
+      "marker card";
+    gap: 8px 16px;
+    padding-bottom: 36px;
+  }
+
+  .markerContainer {
+    grid-area: marker;
+  }
+
+  .yearContainer {
+    grid-area: year;
+    width: auto;
+    min-width: auto;
+    padding-top: 0;
+  }
+
+  .year {
+    font-size: 1.4rem;
+  }
+
+  .card {
+    grid-area: card;
+    padding: 18px 20px;
+  }
+
+  .line {
+    bottom: -36px;
+  }
+
+  .timelineItem:last-child .line {
+    height: 40px;
+    bottom: auto;
+  }
+}
