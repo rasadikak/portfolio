@@ -89,7 +89,7 @@
   color: var(--accent);
   font-size: 1rem;
   font-weight: 500;
-  background: rgba(167, 139, 250, 0.1);
+  background: var(--accent-subtle);
   padding: 4px 12px;
   border-radius: 20px;
   display: inline-block;
@@ -139,7 +139,7 @@
 }
 
 .demo_btn:hover {
-  background-color: rgba(167, 139, 250, 0.1);
+  background-color: var(--accent-subtle);
 }
 
 

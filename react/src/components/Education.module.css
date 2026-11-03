@@ -81,14 +81,14 @@
   height: 16px;
   border-radius: 50%;
   background-color: var(--accent);
-  box-shadow: 0 0 0 4px rgba(167, 139, 250, 0.25), 0 0 14px var(--accent);
+  box-shadow: 0 0 0 4px var(--accent-subtle), 0 0 14px var(--accent);
   z-index: 2;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .timelineItem:hover .dot {
   transform: scale(1.25);
-  box-shadow: 0 0 0 6px rgba(167, 139, 250, 0.35), 0 0 20px var(--accent);
+  box-shadow: 0 0 0 6px var(--accent-subtle), 0 0 20px var(--accent);
 }
 
 .line {
@@ -146,12 +146,12 @@
 .card:hover {
   transform: translateY(-5px);
   border-color: var(--accent);
-  box-shadow: 0 10px 25px -5px rgba(167, 139, 250, 0.15);
+  box-shadow: 0 10px 25px -5px var(--accent-subtle);
 }
 
 .badge {
-  background-color: rgba(167, 139, 250, 0.15);
-  border: 1px solid rgba(167, 139, 250, 0.3);
+  background-color: var(--accent-subtle);
+  border: 1px solid var(--accent-subtle);
   color: var(--accent);
   font-size: 0.85rem;
   font-weight: 700;

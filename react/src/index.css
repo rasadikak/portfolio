@@ -34,6 +34,8 @@ html {
   --grad-3: #2e1065; /* Rich Violet (matches your accent) */
   --grad-4: #0f172a; /* Slate 900 */
   --grad-5: #172554; /* Midnight Blue */
+
+  --accent-subtle: rgba(167, 139, 250, 0.12);
 }
 
 /* Light mode — applied when .light class is on <html> */
